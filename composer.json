@@ -1,6 +1,6 @@
 {
-    "name": "dhii/data-tree-unordered-abstract",
-    "description": "Common functionality for trees, the nodes of which are not ordered",
+    "name": "dhii/data-hierarchy-abstract",
+    "description": "Common functionality for objects which can form a hierarchy",
     "type": "library",
     "license": "MIT",
     "authors": [
