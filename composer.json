@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dhii\\Data\\Tree\\": "src"
+            "Dhii\\Data\\": "src"
         }
     },
     "scripts": {
