@@ -10,6 +10,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^5.4 | ^7.0"
     },
@@ -17,15 +18,27 @@
         "phpunit/phpunit": "^4.8",
         "ptrofimov/xpmock": "^1.1",
         "dhii/php-cs-fixer-config": "dev-php-5.3",
-        "codeclimate/php-test-reporter": "<=0.3.2"
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/validation-interface": "^0.1"
     },
     "autoload": {
         "psr-4": {
-            "Dhii\\Data\\Tree\\": "src"
+            "Dhii\\Data\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Data\\UniTest\\": "test/unit",
+            "Dhii\\Data\\FuncTest\\": "test/functional"
         }
     },
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
     }
 }
